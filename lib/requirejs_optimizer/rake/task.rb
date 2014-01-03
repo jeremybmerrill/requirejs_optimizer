@@ -20,7 +20,7 @@ module RequirejsOptimizer
 
     def extend_default_precompile
       # define_task_deeply("assets:precompile:nondigest") { invoke_or_reboot_rake_task @name }
-      define_task_deeply("assets:precompile") { invoke_or_reboot_rake_task @name }
+      define_task_deeply("assets:precompile:primary") { invoke_or_reboot_rake_task @name }
     end
 
     private
